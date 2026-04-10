@@ -11,7 +11,7 @@ export function SectionHeading({ overline, title, description, align = 'left' }:
   return (
     <div className={`mb-10 flex max-w-3xl flex-col gap-4 ${alignClass}`}>
       {overline ? (
-        <span className="inline-flex rounded-full border border-white/20 bg-white/5 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.2em] text-neon-blue">
+        <span className="mono-label inline-flex rounded-full border border-white/20 bg-white/[0.04] px-3 py-1">
           {overline}
         </span>
       ) : null}

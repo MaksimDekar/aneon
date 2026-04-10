@@ -6,7 +6,7 @@ export function ProductionSection() {
   return (
     <section className="section-shell">
       <Container>
-        <div className="glass-panel grid gap-10 p-6 sm:p-8 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
+        <div className="glass-panel margiela-stitches grid gap-10 p-6 sm:p-8 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
           <div>
             <SectionHeading overline="Производство" title={productionContent.title} />
             <p className="text-base leading-relaxed text-white/70 sm:text-lg">{productionContent.description}</p>

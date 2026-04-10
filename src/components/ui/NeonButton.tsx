@@ -8,9 +8,9 @@ interface NeonButtonProps extends PropsWithChildren {
 
 export function NeonButton({ children, href, type = 'button', className = '' }: NeonButtonProps) {
   const baseClass =
-    'group inline-flex items-center justify-center rounded-xl px-6 py-3 text-sm font-semibold uppercase tracking-[0.1em] text-white transition duration-300';
+    'group inline-flex items-center justify-center rounded-xl px-6 py-3 text-sm font-semibold uppercase tracking-[0.12em] text-white transition duration-300';
   const skinClass =
-    'neon-border bg-gradient-to-b from-base-800 to-base-900 shadow-neon hover:scale-[1.02] hover:shadow-[0_0_24px_rgba(255,47,179,0.35),0_0_46px_rgba(53,214,255,0.28)]';
+    'neon-border bg-gradient-to-b from-base-900 to-black/90 shadow-[0_8px_22px_rgba(0,0,0,0.45)] hover:scale-[1.01] hover:shadow-[0_0_12px_rgba(255,255,255,0.18)]';
 
   if (href) {
     return (

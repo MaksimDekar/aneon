@@ -8,7 +8,7 @@ export function EstimateSection() {
   return (
     <section className="section-shell" id="estimate">
       <Container>
-        <div className="glass-panel neon-border grid gap-7 p-6 sm:p-8">
+        <div className="glass-panel margiela-stitches neon-border grid gap-7 p-6 sm:p-8">
           <SectionHeading description={estimateContent.description} overline="Калькулятор" title={estimateContent.title} />
           <form className="grid gap-4 sm:grid-cols-3">
             {estimateContent.fields.map((field) => (

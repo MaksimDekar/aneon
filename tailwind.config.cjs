@@ -19,6 +19,7 @@ module.exports = {
       fontFamily: {
         sans: ['Manrope', 'system-ui', 'sans-serif'],
         display: ['Sora', 'system-ui', 'sans-serif'],
+        mono: ['IBM Plex Mono', 'ui-monospace', 'SFMono-Regular', 'monospace'],
       },
       boxShadow: {
         neon: '0 0 20px rgba(53, 214, 255, 0.35), 0 0 50px rgba(255, 47, 179, 0.2)',
