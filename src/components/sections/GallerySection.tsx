@@ -8,7 +8,7 @@ export function GallerySection() {
     <section className="section-shell" id="gallery">
       <Container>
         <SectionHeading align="center" description={sectionText.gallery.description} overline={sectionText.gallery.overline} title={sectionText.gallery.title} />
-        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="grid items-start gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {galleryItems.map((item, index) => (
             <article className={`group premium-card overflow-hidden ${index % 5 === 0 ? 'lg:col-span-2' : ''}`} key={item.id}>
               <div className={`relative overflow-hidden ${index % 5 === 0 ? 'h-72 sm:h-80' : 'h-60'}`}>
