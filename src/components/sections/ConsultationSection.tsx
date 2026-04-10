@@ -8,7 +8,7 @@ export function ConsultationSection() {
   return (
     <section className="section-shell" id="consultation">
       <Container>
-        <div className="glass-panel margiela-stitches grid gap-6 p-6 sm:p-8">
+        <div className="glass-panel margiela-stitches grid gap-6 p-4 sm:p-8">
           <SectionHeading description={consultationContent.description} overline="Консультация" title={consultationContent.title} />
           <form className="grid gap-4">
             <div className="grid gap-4 md:grid-cols-2">

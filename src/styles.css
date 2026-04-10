@@ -35,7 +35,7 @@ img {
 
 @layer components {
   .section-shell {
-    @apply py-16 sm:py-24;
+    @apply py-12 sm:py-20 lg:py-24;
   }
 
   .glass-panel {

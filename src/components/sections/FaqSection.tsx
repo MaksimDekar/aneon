@@ -10,8 +10,8 @@ export function FaqSection() {
         <SectionHeading overline={sectionText.faq.overline} title={sectionText.faq.title} />
         <div className="space-y-3">
           {faqItems.map((item) => (
-            <details className="group rounded-2xl border border-white/12 bg-base-900/85 p-5 transition hover:border-white/25" key={item.id}>
-              <summary className="flex cursor-pointer list-none items-center justify-between gap-6 pr-1 font-display text-lg text-white">
+            <details className="group rounded-2xl border border-white/12 bg-base-900/85 p-4 transition hover:border-white/25 sm:p-5" key={item.id}>
+              <summary className="flex cursor-pointer list-none items-center justify-between gap-4 pr-1 font-display text-base text-white sm:gap-6 sm:text-lg">
                 {item.question}
                 <span className="inline-flex h-7 w-7 items-center justify-center rounded-full border border-white/20 text-sm text-white/70 transition group-open:rotate-45">
                   +
