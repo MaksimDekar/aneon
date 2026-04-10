@@ -1,29 +1,29 @@
-import type { ContactsContent } from '@/types/content';
+﻿import type { ContactsContent } from '@/types/content';
 
 export const contactsContent: ContactsContent = {
   phone: {
     label: 'Телефон',
-    value: '+7 (900) 000-00-00',
-    href: 'tel:+79000000000',
+    value: '+7 905 935 83 89',
+    href: 'tel:+79059358389',
   },
   messenger: [
     {
-      label: 'WhatsApp',
-      value: '@neonatelier',
-      href: 'https://wa.me/79000000000',
+      label: 'Telegram',
+      value: '@aneon_369',
+      href: 'https://t.me/aneon_369',
     },
     {
-      label: 'Telegram',
-      value: '@neonatelier',
-      href: 'https://t.me/neonatelier',
+      label: 'Instagram',
+      value: '@a.neon369',
+      href: 'https://www.instagram.com/a.neon369/',
     },
   ],
   email: {
     label: 'Email',
-    value: 'hello@neonatelier.ru',
-    href: 'mailto:hello@neonatelier.ru',
+    value: 'hello@aneon369.ru',
+    href: 'mailto:hello@aneon369.ru',
   },
-  address: 'г. Новосибирск, производство и шоурум по предварительной записи',
+  address: 'Новосибирск, ул. Немировича-Данченко, 104',
   schedule: 'Ежедневно: 10:00 - 20:00',
   labels: {
     messengers: 'Мессенджеры',
