@@ -4,7 +4,7 @@ import { infoBlockContent, staticSectionImages } from '@/data/siteContent';
 
 export function InfoSection() {
   return (
-    <section className="section-shell">
+    <section className="section-shell" id="info">
       <Container>
         <div className="grid gap-10 lg:grid-cols-[0.95fr_1.05fr] lg:items-center">
           <div className="relative">

@@ -4,7 +4,7 @@ import { productionContent, staticSectionImages } from '@/data/siteContent';
 
 export function ProductionSection() {
   return (
-    <section className="section-shell">
+    <section className="section-shell" id="production">
       <Container>
         <div className="glass-panel margiela-stitches grid gap-6 p-4 sm:gap-10 sm:p-8 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
           <div>

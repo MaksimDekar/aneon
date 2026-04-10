@@ -11,7 +11,7 @@ const accentClass: Record<string, string> = {
 
 export function BenefitsSection() {
   return (
-    <section className="section-shell">
+    <section className="section-shell" id="benefits">
       <Container>
         <SectionHeading description={sectionText.benefits.description} overline={sectionText.benefits.overline} title={sectionText.benefits.title} />
         <div className="grid gap-5 sm:grid-cols-2">

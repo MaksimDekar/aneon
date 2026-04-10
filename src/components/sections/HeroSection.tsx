@@ -5,7 +5,7 @@ import { heroContent, staticSectionImages } from '@/data/siteContent';
 
 export function HeroSection() {
   return (
-    <section className="relative z-10 overflow-hidden pb-12 pt-12 sm:pb-20 sm:pt-24">
+    <section className="relative z-10 overflow-hidden pb-12 pt-24 sm:pb-20 sm:pt-28" id="top">
       <div className="pointer-events-none absolute inset-0 bg-mesh-dark opacity-80" />
       <Container>
         <div className="grid items-center gap-8 sm:gap-12 lg:grid-cols-[1.05fr_0.95fr]">

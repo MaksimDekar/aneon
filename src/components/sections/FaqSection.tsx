@@ -5,7 +5,7 @@ import { sectionText } from '@/data/siteContent';
 
 export function FaqSection() {
   return (
-    <section className="section-shell">
+    <section className="section-shell" id="faq">
       <Container>
         <SectionHeading overline={sectionText.faq.overline} title={sectionText.faq.title} />
         <div className="space-y-3">

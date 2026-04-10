@@ -1,5 +1,4 @@
 import { BenefitsSection } from '@/components/sections/BenefitsSection';
-import { CasesSection } from '@/components/sections/CasesSection';
 import { ConsultationSection } from '@/components/sections/ConsultationSection';
 import { EstimateSection } from '@/components/sections/EstimateSection';
 import { FaqSection } from '@/components/sections/FaqSection';
@@ -8,6 +7,7 @@ import { GallerySection } from '@/components/sections/GallerySection';
 import { HeroSection } from '@/components/sections/HeroSection';
 import { InfoSection } from '@/components/sections/InfoSection';
 import { ProductionSection } from '@/components/sections/ProductionSection';
+import { TopNav } from '@/components/sections/TopNav';
 
 function App() {
   return (
@@ -16,6 +16,7 @@ function App() {
       <div className="pointer-events-none fixed -left-24 top-20 z-0 h-72 w-72 rounded-full bg-white/10 blur-3xl" />
       <div className="pointer-events-none fixed -right-16 top-1/3 z-0 h-80 w-80 rounded-full bg-white/8 blur-3xl" />
       <div className="pointer-events-none fixed bottom-0 left-1/3 z-0 h-64 w-64 rounded-full bg-white/5 blur-3xl" />
+      <TopNav />
       <HeroSection />
       <main className="relative z-10">
         <ProductionSection />
@@ -24,7 +25,6 @@ function App() {
         <GallerySection />
         <InfoSection />
         <ConsultationSection />
-        <CasesSection />
         <FaqSection />
       </main>
       <Footer />

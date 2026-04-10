@@ -5,7 +5,7 @@ import { footerContent, staticSectionImages } from '@/data/siteContent';
 
 export function Footer() {
   return (
-    <footer className="relative overflow-hidden border-t border-white/10 bg-black/35 py-8 sm:py-12">
+    <footer className="relative overflow-hidden border-t border-white/10 bg-black/35 py-8 sm:py-12" id="footer">
       <Container>
         <div className="mx-auto max-w-3xl">
           <div className="mb-3 flex items-center justify-center sm:mb-4">
