@@ -1,16 +1,16 @@
-import { Container } from '@/components/ui/Container';
+﻿import { Container } from '@/components/ui/Container';
 import { contactsContent } from '@/data/contacts';
 import { images } from '@/data/images';
 import { footerContent } from '@/data/siteContent';
 
 export function Footer() {
   return (
-    <footer className="border-t border-white/10 py-12">
+    <footer className="section-shell border-t border-white/10 bg-black/20 py-12">
       <Container>
-        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+        <div className="glass-panel grid gap-8 p-6 sm:p-8 md:grid-cols-2 lg:grid-cols-4">
           <div className="space-y-3">
             <img alt="Логотип Neon Atelier" className="h-8 w-auto opacity-90" src={images.logo} />
-            <p className="text-sm text-white/60">{footerContent.legalText}</p>
+            <p className="text-sm leading-relaxed text-white/60">{footerContent.legalText}</p>
           </div>
 
           <div className="space-y-2">
