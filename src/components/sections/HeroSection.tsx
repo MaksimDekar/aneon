@@ -32,28 +32,28 @@ export function HeroSection() {
             </ul>
           </div>
 
-          <div className="relative">
+          <div className="relative lg:ml-auto lg:w-full lg:max-w-[560px]">
             <div className="absolute -inset-6 rounded-[2rem] bg-gradient-to-br from-white/10 via-transparent to-white/5 blur-2xl" />
-            <div className="glass-panel margiela-stitches relative grid gap-4 p-3 shadow-card">
+            <div className="glass-panel relative grid gap-3 p-3 shadow-card sm:gap-4">
               <img
                 alt="Архивное фото неоновой вывески"
-                className="h-[250px] w-full rounded-2xl object-cover sm:h-[440px]"
+                className="h-[250px] w-full rounded-2xl object-cover object-[left_top] sm:h-[420px] lg:h-[470px]"
                 decoding="async"
                 fetchPriority="high"
                 src={staticSectionImages.heroMain}
               />
-              <div className="grid grid-cols-1 gap-3 sm:grid-cols-[1fr_auto] sm:gap-4">
+              <div className="grid grid-cols-[1.7fr_1fr] gap-3 sm:gap-4">
                 <img
                   alt="Дополнительное фото с неоновой вывеской"
-                  className="h-[130px] w-full rounded-2xl object-cover object-center sm:h-[170px]"
+                  className="h-[110px] w-full rounded-2xl object-cover object-[left_center] sm:h-[135px]"
                   decoding="async"
                   loading="lazy"
                   src={staticSectionImages.heroSecondary}
                 />
-                <div className="flex min-w-0 flex-row items-end justify-between rounded-2xl border border-white/15 bg-black/55 p-3 sm:min-w-[120px] sm:flex-col sm:items-start sm:justify-between sm:p-4">
+                <div className="flex min-w-0 flex-col justify-between rounded-2xl border border-white/15 bg-black/55 p-3 sm:p-4">
                   <span className="mono-label">С 2020</span>
-                  <span className="font-display text-2xl text-white sm:text-3xl">271+</span>
-                  <span className="text-right text-xs text-white/65 sm:text-left">реализованный проект</span>
+                  <span className="font-display text-2xl text-white sm:text-[44px] sm:leading-none">271+</span>
+                  <span className="text-xs text-white/65">реализованный проект</span>
                 </div>
               </div>
             </div>
