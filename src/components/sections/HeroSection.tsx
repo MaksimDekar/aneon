@@ -15,7 +15,6 @@ export function HeroSection() {
               {heroContent.eyebrow}
             </span>
             <h1 className="font-display text-3xl font-semibold leading-[0.98] text-white sm:text-6xl lg:text-7xl">{heroContent.title}</h1>
-            <p className="mt-4 max-w-xl text-sm leading-relaxed text-white/70 sm:mt-6 sm:text-lg">{heroContent.subtitle}</p>
             <div className="mt-7 flex flex-wrap gap-3 sm:mt-9">
               <NeonButton className="w-full sm:w-auto" href={heroContent.cta.href}>
                 {heroContent.cta.label}
@@ -46,7 +45,7 @@ export function HeroSection() {
               <div className="grid grid-cols-1 gap-3 sm:grid-cols-[1fr_auto] sm:gap-4">
                 <img
                   alt="Дополнительное фото с неоновой вывеской"
-                  className="h-[130px] w-full rounded-2xl object-cover sm:h-[170px]"
+                  className="h-[130px] w-full rounded-2xl object-cover object-center sm:h-[170px]"
                   decoding="async"
                   loading="lazy"
                   src={staticSectionImages.heroSecondary}

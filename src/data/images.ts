@@ -1,6 +1,6 @@
 import logo from '@/assets/images/logo-neon.svg';
 import heroMain from '@/assets/images/hero-main.png';
-import heroSecondary from '@/assets/images/hero-secondary.png';
+import heroSecondary from '@/assets/images/hero-secondary-netflix.jpg';
 import productionHandmade from '@/assets/images/production-handmade.png';
 import galleryBokaleSign from '@/assets/images/gallery-bokale-sign.png';
 import galleryBokaleWide from '@/assets/images/gallery-bokale-wide.png';
