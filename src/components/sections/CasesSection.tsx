@@ -11,7 +11,7 @@ export function CasesSection() {
         <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
           {caseItems.map((item) => (
             <article className="premium-card overflow-hidden" key={item.id}>
-              <img alt={item.title} className="h-48 w-full object-cover sm:h-56" src={item.image} />
+              <img alt={item.title} className="h-48 w-full object-cover sm:h-56" decoding="async" loading="lazy" src={item.image} />
               <div className="space-y-3 p-4 sm:p-5">
                 <h3 className="font-display text-lg text-white sm:text-xl">{item.title}</h3>
                 <p className="text-sm leading-relaxed text-white/70">{item.description}</p>

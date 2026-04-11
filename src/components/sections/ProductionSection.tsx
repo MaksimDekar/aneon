@@ -19,6 +19,8 @@ export function ProductionSection() {
             <img
               alt="Процесс ручной сборки неоновых вывесок"
               className="relative h-[240px] w-full rounded-2xl border border-white/10 object-cover sm:h-[420px]"
+              decoding="async"
+              loading="lazy"
               src={staticSectionImages.production}
             />
           </div>

@@ -12,6 +12,8 @@ export function InfoSection() {
             <img
               alt="Архивный неоновый проект"
               className="relative h-[240px] w-full rounded-3xl border border-white/10 object-cover shadow-card sm:h-[440px]"
+              decoding="async"
+              loading="lazy"
               src={staticSectionImages.infoBlock}
             />
           </div>

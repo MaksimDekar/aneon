@@ -15,6 +15,8 @@ export function GallerySection() {
                 <img
                   alt={item.alt}
                   className="h-full w-full object-cover transition duration-500 group-hover:scale-105 group-hover:brightness-110"
+                  decoding="async"
+                  loading="lazy"
                   src={item.image}
                 />
                 <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/75 via-black/20 to-transparent" />

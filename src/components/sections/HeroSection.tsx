@@ -36,9 +36,21 @@ export function HeroSection() {
           <div className="relative">
             <div className="absolute -inset-6 rounded-[2rem] bg-gradient-to-br from-white/10 via-transparent to-white/5 blur-2xl" />
             <div className="glass-panel margiela-stitches relative grid gap-4 p-3 shadow-card">
-              <img alt="Архивное фото неоновой вывески" className="h-[250px] w-full rounded-2xl object-cover sm:h-[440px]" src={staticSectionImages.heroMain} />
+              <img
+                alt="Архивное фото неоновой вывески"
+                className="h-[250px] w-full rounded-2xl object-cover sm:h-[440px]"
+                decoding="async"
+                fetchPriority="high"
+                src={staticSectionImages.heroMain}
+              />
               <div className="grid grid-cols-1 gap-3 sm:grid-cols-[1fr_auto] sm:gap-4">
-                <img alt="Дополнительное фото с неоновой вывеской" className="h-[130px] w-full rounded-2xl object-cover sm:h-[170px]" src={staticSectionImages.heroSecondary} />
+                <img
+                  alt="Дополнительное фото с неоновой вывеской"
+                  className="h-[130px] w-full rounded-2xl object-cover sm:h-[170px]"
+                  decoding="async"
+                  loading="lazy"
+                  src={staticSectionImages.heroSecondary}
+                />
                 <div className="flex min-w-0 flex-row items-end justify-between rounded-2xl border border-white/15 bg-black/55 p-3 sm:min-w-[120px] sm:flex-col sm:items-start sm:justify-between sm:p-4">
                   <span className="mono-label">С 2020</span>
                   <span className="font-display text-2xl text-white sm:text-3xl">271+</span>

@@ -9,13 +9,15 @@ export function Footer() {
       <Container>
         <div className="mx-auto max-w-3xl">
           <div className="mb-3 flex items-center justify-center sm:mb-4">
-            <img alt="369" className="h-12 w-auto sm:h-14" src={footer369} />
+            <img alt="369" className="h-12 w-auto sm:h-14" decoding="async" loading="lazy" src={footer369} />
           </div>
 
           <div className="relative mx-auto mb-4 max-w-xl sm:mb-5">
             <img
               alt="Неоновая сцена"
               className="h-16 w-full rounded-sm border border-white/10 object-cover opacity-80 sm:h-24"
+              decoding="async"
+              loading="lazy"
               src={staticSectionImages.heroSecondary}
             />
             <svg
