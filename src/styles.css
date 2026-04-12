@@ -15,11 +15,7 @@ body,
 body {
   margin: 0;
   font-family: Manrope, system-ui, sans-serif;
-  background:
-    radial-gradient(circle at 10% -5%, rgba(255, 255, 255, 0.08), transparent 22%),
-    radial-gradient(circle at 85% 0%, rgba(255, 255, 255, 0.06), transparent 24%),
-    radial-gradient(circle at 85% 95%, rgba(255, 255, 255, 0.04), transparent 20%),
-    #06070b;
+  background: #06070b;
   color: #ffffff;
   letter-spacing: 0.01em;
 }
@@ -33,7 +29,65 @@ img {
   max-width: 100%;
 }
 
+@keyframes ambientDrift {
+  0% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  50% {
+    transform: translate3d(0, -18px, 0) scale(1.04);
+  }
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    transform: translateX(-140%) skewX(-12deg);
+  }
+  100% {
+    transform: translateX(180%) skewX(-12deg);
+  }
+}
+
+@keyframes fadeLift {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 @layer components {
+  .site-ambient {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 0;
+    background:
+      radial-gradient(700px 360px at 13% 8%, rgba(138, 27, 82, 0.2), transparent 70%),
+      radial-gradient(760px 420px at 88% 6%, rgba(17, 77, 108, 0.22), transparent 72%),
+      radial-gradient(900px 480px at 78% 72%, rgba(34, 84, 61, 0.15), transparent 74%),
+      radial-gradient(720px 380px at 22% 74%, rgba(42, 47, 86, 0.18), transparent 76%);
+    animation: ambientDrift 14s ease-in-out infinite;
+  }
+
+  .site-noise {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 0;
+    opacity: 0.08;
+    background-image:
+      radial-gradient(circle at 20% 20%, rgba(255, 255, 255, 0.25) 0.5px, transparent 0.7px),
+      radial-gradient(circle at 80% 40%, rgba(255, 255, 255, 0.2) 0.5px, transparent 0.7px);
+    background-size: 3px 3px, 4px 4px;
+    mix-blend-mode: soft-light;
+  }
+
   .section-shell {
     @apply py-12 sm:py-20 lg:py-24;
   }
@@ -44,6 +98,25 @@ img {
 
   .premium-card {
     @apply rounded-2xl border border-white/15 bg-base-900/90 shadow-card transition duration-300 hover:-translate-y-1 hover:border-white/35;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .premium-card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    width: 42%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.16), transparent);
+    transform: translateX(-140%) skewX(-12deg);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+  }
+
+  .premium-card:hover::before {
+    opacity: 0.75;
+    animation: shimmer 900ms ease;
   }
 
   .margiela-stitches {
@@ -84,6 +157,10 @@ img {
 
   .mono-label {
     @apply font-mono text-[11px] uppercase tracking-[0.22em] text-white/60;
+  }
+
+  .fx-fade-lift {
+    animation: fadeLift 650ms ease both;
   }
 }
 
