@@ -67,6 +67,7 @@ export const estimateContent: EstimateContent = {
     { id: 'size', label: 'Размер вывески', placeholder: 'Например: 120x60 см' },
     { id: 'neonLength', label: 'Длина неона', placeholder: 'Например: 4.5 м' },
     { id: 'elements', label: 'Количество элементов', placeholder: 'Например: 3 контура' },
+    { id: 'contact', label: 'Телефон / Telegram', placeholder: '+7 900 000-00-00 или @username' },
   ],
   ctaLabel: 'Получить расчет',
 };

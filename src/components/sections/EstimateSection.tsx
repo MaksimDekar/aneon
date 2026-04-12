@@ -11,7 +11,9 @@ export function EstimateSection() {
     size: '',
     neonLength: '',
     elements: '',
+    contact: '',
   });
+  const [consent, setConsent] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [statusMessage, setStatusMessage] = useState('');
 
@@ -25,9 +27,12 @@ export function EstimateSection() {
         Размер: formState.size,
         'Длина неона': formState.neonLength,
         'Количество элементов': formState.elements,
+        'Контакт для ответа': formState.contact,
+        'Согласие на обработку данных': consent ? 'Да' : 'Нет',
       });
       setStatusMessage('Заявка отправлена. Мы свяжемся с вами в ближайшее время.');
-      setFormState({ size: '', neonLength: '', elements: '' });
+      setFormState({ size: '', neonLength: '', elements: '', contact: '' });
+      setConsent(false);
     } catch {
       setStatusMessage('Не удалось отправить заявку. Попробуйте еще раз.');
     } finally {
@@ -52,6 +57,16 @@ export function EstimateSection() {
                 onChange={(value) => setFormState((prev) => ({ ...prev, [field.id]: value }))}
               />
             ))}
+            <label className="sm:col-span-3 flex items-start gap-3 rounded-xl border border-white/15 bg-white/[0.03] p-3 text-sm text-white/80">
+              <input
+                checked={consent}
+                className="mt-1 h-4 w-4 rounded border-white/30 bg-transparent accent-white"
+                onChange={(event) => setConsent(event.target.checked)}
+                required
+                type="checkbox"
+              />
+              <span>Согласен на обработку персональных данных и получение ответа по указанным контактам.</span>
+            </label>
             <div className="sm:col-span-3">
               <NeonButton className="w-full sm:w-auto" type="submit">
                 {estimateContent.ctaLabel}
