@@ -25,7 +25,7 @@ export function HeroSection() {
             </span>
           </div>
 
-          <div className="relative fx-fade-lift lg:ml-auto lg:w-full lg:max-w-[560px]" style={{ animationDelay: '120ms' }}>
+          <div className="relative fx-fade-lift fx-float-slow lg:ml-auto lg:w-full lg:max-w-[560px]" style={{ animationDelay: '120ms' }}>
             <div className="absolute -inset-6 rounded-[2rem] bg-gradient-to-br from-white/10 via-transparent to-white/5 blur-2xl" />
             <div className="glass-panel relative grid gap-3 p-3 shadow-card sm:gap-4">
               <img
@@ -43,7 +43,7 @@ export function HeroSection() {
                   loading="lazy"
                   src={staticSectionImages.heroSecondary}
                 />
-                <div className="flex min-w-0 flex-col justify-between rounded-2xl border border-white/15 bg-black/55 p-3 sm:p-4">
+                <div className="fx-pulse-soft flex min-w-0 flex-col justify-between rounded-2xl border border-white/15 bg-black/55 p-3 sm:p-4">
                   <span className="mono-label">С 2020</span>
                   <span className="font-display text-2xl text-white sm:text-[44px] sm:leading-none">271+</span>
                   <span className="text-xs text-white/65">реализованный проект</span>

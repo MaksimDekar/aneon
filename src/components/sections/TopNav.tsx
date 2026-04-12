@@ -21,7 +21,7 @@ export function TopNav() {
 
         <details className="group relative">
           <summary className="mono-label glass-panel cursor-pointer list-none px-4 py-2 text-white/85">Меню</summary>
-          <nav className="glass-panel absolute right-0 mt-2 min-w-56 overflow-hidden p-2">
+          <nav className="dropdown-panel glass-panel absolute right-0 mt-2 min-w-56 overflow-hidden p-2">
             <ul className="grid gap-1">
               {navItems.map((item) => (
                 <li key={item.href}>
@@ -40,4 +40,3 @@ export function TopNav() {
     </header>
   );
 }
-
