@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import { BenefitsSection } from '@/components/sections/BenefitsSection';
+import { CookieBanner } from '@/components/sections/CookieBanner';
 import { ConsultationSection } from '@/components/sections/ConsultationSection';
 import { EstimateSection } from '@/components/sections/EstimateSection';
 import { FaqSection } from '@/components/sections/FaqSection';
@@ -48,6 +49,7 @@ function App() {
         <FaqSection />
       </main>
       <Footer />
+      <CookieBanner />
     </div>
   );
 }
