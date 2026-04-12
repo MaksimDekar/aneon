@@ -94,7 +94,7 @@ export const consultationContent: ConsultationContent = {
 };
 
 export const footerContent: FooterContent = {
-  copyright: `© ${new Date().getFullYear()} Neon Atelier`,
+  copyright: `© ${new Date().getFullYear()} a.neon369`,
   legalText:
     'Информация на сайте не является публичной офертой. Любое копирование материалов допускается только с обязательной ссылкой на источник.',
 };
