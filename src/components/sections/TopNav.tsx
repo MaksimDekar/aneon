@@ -1,3 +1,4 @@
+﻿import { useEffect, useRef, useState } from 'react';
 import { images } from '@/data/images';
 
 const navItems = [
@@ -12,6 +13,21 @@ const navItems = [
 ];
 
 export function TopNav() {
+  const [isOpen, setIsOpen] = useState(false);
+  const menuRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (!menuRef.current) return;
+      if (!menuRef.current.contains(event.target as Node)) {
+        setIsOpen(false);
+      }
+    };
+
+    document.addEventListener('click', handleClickOutside);
+    return () => document.removeEventListener('click', handleClickOutside);
+  }, []);
+
   return (
     <header className="fixed inset-x-0 top-0 z-30">
       <div className="mx-auto flex w-full max-w-7xl items-center justify-between px-4 pt-3 sm:px-6 lg:px-8">
@@ -19,15 +35,25 @@ export function TopNav() {
           <img alt="Логотип" className="h-5 w-auto" src={images.logo} />
         </a>
 
-        <details className="group relative">
-          <summary className="mono-label glass-panel cursor-pointer list-none px-4 py-2 text-white/85">Меню</summary>
-          <nav className="dropdown-panel glass-panel absolute right-0 mt-2 min-w-56 overflow-hidden p-2">
+        <div className="relative" ref={menuRef}>
+          <button
+            aria-expanded={isOpen}
+            aria-haspopup="true"
+            className="mono-label glass-panel cursor-pointer px-4 py-2 text-white/85"
+            onClick={() => setIsOpen((prev) => !prev)}
+            type="button"
+          >
+            Меню
+          </button>
+
+          <nav className={`dropdown-panel glass-panel absolute right-0 mt-2 min-w-56 overflow-hidden p-2 ${isOpen ? 'is-open' : ''}`}>
             <ul className="grid gap-1">
               {navItems.map((item) => (
                 <li key={item.href}>
                   <a
                     className="block rounded-lg px-3 py-2 text-sm text-white/80 transition hover:bg-white/10 hover:text-white"
                     href={item.href}
+                    onClick={() => setIsOpen(false)}
                   >
                     {item.label}
                   </a>
@@ -35,7 +61,7 @@ export function TopNav() {
               ))}
             </ul>
           </nav>
-        </details>
+        </div>
       </div>
     </header>
   );
