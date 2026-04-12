@@ -1,4 +1,4 @@
-import { images } from '@/data/images';
+﻿import { images } from '@/data/images';
 import type { CaseItem, GalleryItem } from '@/types/content';
 
 export const galleryItems: GalleryItem[] = [
@@ -34,22 +34,22 @@ export const galleryItems: GalleryItem[] = [
     id: 'g5',
     title: 'Create your own reality',
     subtitle: 'Сценарная надпись для интерьера',
-    image: images.gallery.createReality,
+    image: images.gallery.madTattoo,
     alt: 'Неоновая надпись create your own reality',
   },
   {
     id: 'g6',
     title: 'MAD',
     subtitle: 'Вертикальная вывеска в зоне мастера',
-    image: images.gallery.madTattoo,
+    image: images.gallery.rayskiyKokos,
     alt: 'Вертикальная красная вывеска MAD',
   },
   {
     id: 'g7',
-    title: 'Райский кокос',
-    subtitle: 'Брендовая вывеска с пиктограммой',
-    image: images.gallery.rayskiyKokos,
-    alt: 'Белая неоновая вывеска Райский кокос',
+    title: 'Neon Portrait',
+    subtitle: 'Атмосферный неоновый кадр для креативного проекта',
+    image: images.gallery.createReality,
+    alt: 'Монохромный кадр с неоновой подсветкой',
   },
   {
     id: 'g8',
@@ -97,4 +97,3 @@ export const caseItems: CaseItem[] = [
     metrics: ['Срок: 8 дней', 'Диаметр: 80 см', 'Формат: фотозона'],
   },
 ];
-
