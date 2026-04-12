@@ -45,7 +45,7 @@ export function HeroSection() {
               <div className="grid grid-cols-[1.7fr_1fr] gap-3 sm:gap-4">
                 <img
                   alt="Дополнительное фото с неоновой вывеской"
-                  className="h-[110px] w-full rounded-2xl object-cover object-[left_center] sm:h-[135px]"
+                  className="h-[110px] w-full rounded-2xl object-cover object-[left_top] sm:h-[135px]"
                   decoding="async"
                   loading="lazy"
                   src={staticSectionImages.heroSecondary}
