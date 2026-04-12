@@ -1,5 +1,6 @@
 ﻿import { Container } from '@/components/ui/Container';
 import { NeonButton } from '@/components/ui/NeonButton';
+import { images } from '@/data/images';
 import { heroContent, staticSectionImages } from '@/data/siteContent';
 
 export function HeroSection() {
@@ -9,6 +10,7 @@ export function HeroSection() {
       <Container>
         <div className="grid items-center gap-8 sm:gap-12 lg:grid-cols-[1.05fr_0.95fr]">
           <div className="relative">
+            <img alt="Логотип компании" className="mb-6 h-8 w-auto opacity-95 sm:mb-7 sm:h-9" src={images.logo} />
             <h1 className="font-display text-3xl font-semibold leading-[0.98] text-white sm:text-6xl lg:text-7xl">{heroContent.title}</h1>
             <div className="mt-8 flex flex-wrap gap-3 sm:mt-9">
               <NeonButton className="w-full sm:w-auto" href={heroContent.cta.href}>
