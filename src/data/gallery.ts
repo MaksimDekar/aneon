@@ -53,10 +53,10 @@ export const galleryItems: GalleryItem[] = [
   },
   {
     id: 'g8',
-    title: 'Accuzo',
-    subtitle: 'Логотип с желтым контуром',
+    title: 'Райский кокос',
+    subtitle: 'Брендовая вывеска с пиктограммой',
     image: images.gallery.accuzo,
-    alt: 'Желтая неоновая вывеска Accuzo',
+    alt: 'Белая неоновая вывеска Райский кокос',
   },
 ];
 
