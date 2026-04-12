@@ -19,9 +19,12 @@ export function InfoSection() {
           </div>
           <div>
             <SectionHeading overline="О продукте" title={infoBlockContent.title} />
-            <div className="space-y-4">
-              {infoBlockContent.paragraphs.map((paragraph) => (
-                <p className="text-sm leading-relaxed text-white/70 sm:text-lg" key={paragraph}>
+            <div className="space-y-3 sm:space-y-4">
+              {infoBlockContent.paragraphs.map((paragraph, index) => (
+                <p
+                  className={`mobile-compact text-sm leading-relaxed text-white/70 sm:text-lg ${index > 0 ? 'mobile-hide sm:block' : 'mobile-clamp-3'}`}
+                  key={paragraph}
+                >
                   {paragraph}
                 </p>
               ))}

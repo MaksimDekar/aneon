@@ -36,7 +36,7 @@ export function Footer() {
 
           <div className="mx-auto max-w-xl text-center">
             <h3 className="mb-2 font-display text-2xl font-semibold italic tracking-tight text-white sm:mb-3 sm:text-4xl">a.neon</h3>
-            <p className="mx-auto mb-4 max-w-xs text-xs leading-relaxed text-white/72 sm:mb-5 sm:text-base">
+            <p className="mobile-clamp-2 mx-auto mb-4 max-w-xs text-xs leading-relaxed text-white/72 sm:mb-5 sm:text-base">
               Делаем вывески с 2020 года и отправляем во все уголки нашей страны
             </p>
 
@@ -68,7 +68,8 @@ export function Footer() {
         </div>
 
         <div className="mx-auto mt-4 max-w-3xl border-t border-white/10 pt-3 text-center text-[11px] leading-relaxed text-white/45 sm:mt-6 sm:pt-4 sm:text-sm">
-          {footerContent.legalText}
+          <span className="sm:hidden">Информация на сайте не является публичной офертой.</span>
+          <span className="hidden sm:inline">{footerContent.legalText}</span>
           <div className="mt-1 text-white/35">{footerContent.copyright}</div>
         </div>
       </Container>

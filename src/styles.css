@@ -162,5 +162,36 @@ img {
   .fx-fade-lift {
     animation: fadeLift 650ms ease both;
   }
+
+  .mobile-clamp-2 {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .mobile-clamp-3 {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  @media (max-width: 639px) {
+    .mobile-clamp-2 {
+      -webkit-line-clamp: 2;
+    }
+
+    .mobile-clamp-3 {
+      -webkit-line-clamp: 3;
+    }
+
+    .mobile-compact {
+      font-size: 0.925rem;
+      line-height: 1.5;
+    }
+
+    .mobile-hide {
+      display: none !important;
+    }
+  }
 }
 

@@ -21,8 +21,8 @@ export function GallerySection() {
                 />
                 <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/75 via-black/20 to-transparent" />
                 <div className="absolute bottom-0 p-3 sm:p-5">
-                  <h3 className="font-display text-base text-white sm:text-xl">{item.title}</h3>
-                  <p className="text-xs text-white/70 sm:text-sm">{item.subtitle}</p>
+                  <h3 className="mobile-clamp-2 font-display text-base text-white sm:text-xl">{item.title}</h3>
+                  <p className="mobile-hide text-xs text-white/70 sm:block sm:text-sm">{item.subtitle}</p>
                 </div>
               </div>
             </article>

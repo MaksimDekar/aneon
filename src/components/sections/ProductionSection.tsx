@@ -9,8 +9,8 @@ export function ProductionSection() {
         <div className="glass-panel margiela-stitches grid gap-6 p-4 sm:gap-10 sm:p-8 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
           <div>
             <SectionHeading overline="Производство" title={productionContent.title} />
-            <p className="text-sm leading-relaxed text-white/70 sm:text-lg">{productionContent.description}</p>
-            <div className="mt-5 inline-flex rounded-xl border border-white/15 bg-white/5 px-4 py-3 text-xs text-white/80 sm:mt-7 sm:text-sm">
+            <p className="mobile-clamp-3 mobile-compact text-sm leading-relaxed text-white/70 sm:text-lg">{productionContent.description}</p>
+            <div className="mobile-hide mt-5 inline-flex rounded-xl border border-white/15 bg-white/5 px-4 py-3 text-xs text-white/80 sm:mt-7 sm:text-sm">
               Ручная сборка, тест свечения и проверка перед отправкой каждого проекта.
             </div>
           </div>

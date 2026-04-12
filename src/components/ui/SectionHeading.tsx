@@ -15,8 +15,8 @@ export function SectionHeading({ overline, title, description, align = 'left' }:
           {overline}
         </span>
       ) : null}
-      <h2 className="font-display text-2xl font-semibold leading-[1.08] text-white sm:text-4xl lg:text-5xl">{title}</h2>
-      {description ? <p className="max-w-2xl text-sm leading-relaxed text-white/70 sm:text-lg">{description}</p> : null}
+      <h2 className="font-display text-[2rem] font-semibold leading-[1.02] text-white sm:text-4xl lg:text-5xl">{title}</h2>
+      {description ? <p className="mobile-clamp-3 max-w-2xl text-sm leading-relaxed text-white/70 sm:text-lg">{description}</p> : null}
     </div>
   );
 }

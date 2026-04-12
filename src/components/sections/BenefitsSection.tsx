@@ -23,7 +23,7 @@ export function BenefitsSection() {
                   0{index + 1}
                 </span>
                 <h3 className="font-display text-lg font-semibold text-white sm:text-2xl">{benefit.title}</h3>
-                <p className="mt-3 text-sm leading-relaxed text-white/75 sm:text-base">{benefit.description}</p>
+                <p className="mobile-clamp-3 mt-3 text-sm leading-relaxed text-white/75 sm:text-base">{benefit.description}</p>
               </div>
             </article>
           ))}
