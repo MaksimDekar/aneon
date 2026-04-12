@@ -199,12 +199,25 @@ img {
       opacity 220ms ease,
       transform 220ms ease;
     pointer-events: none;
+    visibility: hidden;
   }
 
   details[open] .dropdown-panel {
     opacity: 1;
     transform: translateY(0) scale(1);
     pointer-events: auto;
+    visibility: visible;
+  }
+
+  details .dropdown-panel {
+    transition-behavior: allow-discrete;
+  }
+
+  @starting-style {
+    details[open] .dropdown-panel {
+      opacity: 0;
+      transform: translateY(-6px) scale(0.98);
+    }
   }
 
   .fx-fade-lift {
