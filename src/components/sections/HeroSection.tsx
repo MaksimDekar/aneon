@@ -1,6 +1,5 @@
 ﻿import { Container } from '@/components/ui/Container';
 import { NeonButton } from '@/components/ui/NeonButton';
-import { images } from '@/data/images';
 import { heroContent, staticSectionImages } from '@/data/siteContent';
 
 export function HeroSection() {
@@ -10,12 +9,8 @@ export function HeroSection() {
       <Container>
         <div className="grid items-center gap-8 sm:gap-12 lg:grid-cols-[1.05fr_0.95fr]">
           <div className="relative">
-            <img alt="Логотип компании" className="mb-6 h-8 w-auto opacity-95 sm:mb-10 sm:h-9" src={images.logo} />
-            <span className="mono-label mb-4 inline-flex rounded-full border border-white/25 bg-white/[0.04] px-3 py-1 sm:mb-5">
-              {heroContent.eyebrow}
-            </span>
             <h1 className="font-display text-3xl font-semibold leading-[0.98] text-white sm:text-6xl lg:text-7xl">{heroContent.title}</h1>
-            <div className="mt-7 flex flex-wrap gap-3 sm:mt-9">
+            <div className="mt-8 flex flex-wrap gap-3 sm:mt-9">
               <NeonButton className="w-full sm:w-auto" href={heroContent.cta.href}>
                 {heroContent.cta.label}
               </NeonButton>
@@ -23,13 +18,9 @@ export function HeroSection() {
                 {heroContent.secondaryCta.label}
               </NeonButton>
             </div>
-            <ul className="mt-7 flex flex-wrap gap-2 sm:mt-10 sm:gap-3">
-              {heroContent.stats.map((item) => (
-                <li className="font-mono rounded-full border border-white/20 bg-white/[0.03] px-3 py-2 text-[10px] uppercase tracking-[0.14em] text-white/78 sm:px-4 sm:text-[11px] sm:tracking-[0.18em]" key={item}>
-                  {item}
-                </li>
-              ))}
-            </ul>
+            <span className="mono-label mt-6 inline-flex rounded-full border border-white/25 bg-white/[0.04] px-3 py-1 sm:mt-8">
+              {heroContent.eyebrow}
+            </span>
           </div>
 
           <div className="relative lg:ml-auto lg:w-full lg:max-w-[560px]">
